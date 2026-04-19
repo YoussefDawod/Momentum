@@ -1,0 +1,37 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-md);
+  padding: var(--space-3xl) var(--space-md);
+  min-height: calc(100vh - 220px);
+  animation: fadeInUp 400ms ease;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.03em;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  max-width: 420px;
+}
+
+.link {
+  margin-top: var(--space-md);
+}

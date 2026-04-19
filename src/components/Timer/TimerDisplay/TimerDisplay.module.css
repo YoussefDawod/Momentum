@@ -1,0 +1,15 @@
+.time {
+  font-family: var(--font-mono);
+  font-size: var(--text-timer);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .time {
+    font-size: 3.5rem;
+  }
+}

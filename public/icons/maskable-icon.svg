@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E07A5F" />
+      <stop offset="100%" stop-color="#F2CC8F" />
+    </linearGradient>
+  </defs>
+  <!-- Full-bleed background for maskable safe zone -->
+  <rect width="512" height="512" fill="url(#bg)" />
+  <!-- Logo centered within 80% safe zone (256 ± 205) -->
+  <g transform="translate(256 272)">
+    <circle r="128" fill="none" stroke="#FAF7F2" stroke-width="28" opacity="0.4" />
+    <path d="M 0 -112 A 112 112 0 0 1 112 0" fill="none" stroke="#FAF7F2" stroke-width="28" stroke-linecap="round" />
+    <rect x="-48" y="-176" width="96" height="32" rx="12" fill="#FAF7F2" />
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#FAF7F2" stroke-width="24" stroke-linecap="round" />
+    <circle r="10" fill="#FAF7F2" />
+  </g>
+</svg>

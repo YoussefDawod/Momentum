@@ -1,0 +1,13 @@
+.logo {
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.logo:hover,
+a:hover > .logo {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 4px var(--color-primary-soft);
+}

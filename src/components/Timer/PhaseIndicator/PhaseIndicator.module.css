@@ -1,0 +1,57 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--color-surface-glass);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: color var(--transition-slow), border-color var(--transition-slow);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.work {
+  color: var(--color-work);
+  border-color: var(--color-primary-soft);
+}
+
+.work .dot {
+  background-color: var(--color-work);
+}
+
+.break {
+  color: var(--color-break);
+  border-color: var(--color-secondary-soft);
+}
+
+.break .dot {
+  background-color: var(--color-break);
+}
+
+.idle {
+  color: var(--color-text-secondary);
+}
+
+.idle .dot {
+  background-color: var(--color-text-muted);
+  animation: none;
+}
+
+.cycle {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
