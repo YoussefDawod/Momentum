@@ -7,19 +7,19 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [workMinutes, setWorkMinutes] = useState(25); // Arbeitszeit
   const [breakMinutes, setBreakMinutes] = useState(5); // Pausenzeit
-  const [selectedMethod, setSelectedMethod] = useState("Standard Pomodoro");
+  const [selectedMethod, setSelectedMethod] = useState("Standard Momentum");
   const [isWorkTime, setIsWorkTime] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
   const [phaseCount, setPhaseCount] = useState(0); // Zähler für die Phasen
   const [completedPhases, setCompletedPhases] = useState([]); // Liste der abgeschlossenen Phasen
   const [phaseRepetitions, setPhaseRepetitions] = useState(4); // Anzahl der Wiederholungen
 
-  // Methoden für verschiedene Pomodoro-Timer
+  // Methoden für verschiedene Momentum-Timer
   const methods = {
-    "Standard Pomodoro": { work: 25, break: 5 },
-    "Kurze Pomodoro": { work: 15, break: 5 },
-    "Lange Pomodoro": { work: 50, break: 10 },
-    "2-Phasen Pomodoro": { work: 45, break: 15 },
+    "Standard Momentum": { work: 25, break: 5 },
+    "Kurze Momentum": { work: 15, break: 5 },
+    "Lange Momentum": { work: 50, break: 10 },
+    "2-Phasen Momentum": { work: 45, break: 15 },
   };
 
   // Berechnung der Gesamtzeit und des Fortschritts
@@ -161,7 +161,7 @@ function App() {
   return (
     <div className={`App`} data-theme={darkMode ? "dark" : "light"}>
       <div className="header">
-        <h1>Pomodoro Timer</h1>
+        <h1>Momentum</h1>
         <div className="header-buttons">
           <button onClick={toggleDarkMode}>
             {darkMode ? "Hellmodus" : "Dunkelmodus"}

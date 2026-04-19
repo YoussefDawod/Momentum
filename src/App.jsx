@@ -6,7 +6,7 @@ const App = () => {
   const [cyclesCompleted, setCyclesCompleted] = useState(0);
   const [totalWorkTime, setTotalWorkTime] = useState(0);
   const [totalBreakTime, setTotalBreakTime] = useState(0);
-  const [method, setMethod] = useState("pomodoro");
+  const [method, setMethod] = useState("momentum");
   const [customWorkTime, setCustomWorkTime] = useState(25);
   const [customBreakTime, setCustomBreakTime] = useState(5);
   const [customCycles, setCustomCycles] = useState(4);
@@ -17,7 +17,7 @@ const App = () => {
   const startTimeRef = useRef(null);
 
   const methods = {
-    pomodoro: { work: 25, break: 5, cycles: 4 },
+    momentum: { work: 25, break: 5, cycles: 4 },
     longWork: { work: 50, break: 10, cycles: 4 },
     shortWork: { work: 15, break: 3, cycles: 4 },
     custom: { work: customWorkTime, break: customBreakTime, cycles: customCycles },
@@ -115,7 +115,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="header">
-        <h1>Pomodoro Timer</h1>
+        <h1>Momentum</h1>
         <div className="header-buttons">
           <button onClick={toggleTheme}>
             {theme === "dark" ? "Light Mode" : "Dark Mode"}
@@ -127,7 +127,7 @@ const App = () => {
         <div>
           <label>Methode:</label>
           <select value={method} onChange={(e) => switchMethod(e.target.value)}>
-            <option value="pomodoro">Klassisch</option>
+            <option value="momentum">Klassisch</option>
             <option value="longWork">Lange Phasen</option>
             <option value="shortWork">Kurze Phasen</option>
             <option value="custom">Benutzerdefiniert</option>
